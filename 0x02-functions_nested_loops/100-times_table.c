@@ -1,49 +1,36 @@
 #include "main.h"
 /**
- * print_times_table - thia will print n times table
- * @n: this collects an integer
+ * print_times_table - print n times table
+ * @n: parameter
  */
 void print_times_table(int n)
 {
-	int i, j, k;
+	int digit, mult, result;
 
-	if (n >= 0 && n <= 15)
+	if (n <= 15 && n >= 0)
+	for (digit = 0; digit <= n; digit++)
 	{
-		for (i = 0; i <= n; i++)
+	_putchar('0');
+		for (mult = 1; mult <= n; mult++)
 		{
-			for (j = 0; j <= n; j++)
-			{
-				k = i * j;
-				if (j == 0)
-				{
-					_putchar(k + '0');
-				}
-				else if (k < 10 && j != 0)
-				{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(k + '0');
-				}
-				else if (k >= 10 && k < 100)
-				{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar((k / 10) + '0');
-				_putchar((k % 10) + '0');
-				}
-				else if (k >= 100)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar((k / 100) + '0');
-					_putchar(((k / 10) % 10) + '0');
-					_putchar((k % 10) + '0');
-				}
-			}
-			_putchar('\n');
+		_putchar(',');
+		_putchar(' ');
+		result = digit * mult;
+		if (result <= 99)
+			_putchar(' ');
+		if (result <= 9)
+			_putchar(' ');
+		if (result >= 100)
+		{
+		_putchar((result / 100) + '0');
+		_putchar(((result / 10) % 10) + '0');
 		}
+		else if (result <= 99 && result >= 10)
+		{
+		_putchar((result / 10) + '0');
+		}
+		_putchar((result % 10) + '0');
+		}
+		_putchar('\n');
 	}
 }
