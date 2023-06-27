@@ -1,10 +1,9 @@
 0-main.c
 0-98
 1-swap
-<<<<<<< HEAD
 1-main.c
 2-strlen
 2-main.c
-=======
 1-main.c
->>>>>>> 0eec78e6c5f469c284acdcd1e1bb6038c4bd7a5f
+3-puts
+3-main.c
