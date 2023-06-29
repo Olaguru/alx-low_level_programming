@@ -17,9 +17,9 @@ int main(void)
 	{
 		c = rand() % 128;
 		i += c;
-		printf("%c", c);
+		putchar(c);
 	}
-	printf("%c", 2772 - i);
+	putchar(2772 - i);
 
 	return (0);
 }
