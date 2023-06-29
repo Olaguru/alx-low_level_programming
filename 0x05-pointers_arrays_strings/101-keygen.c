@@ -15,7 +15,7 @@ int main(void)
 	
 	for (i = 0; i <= 3000; i++)
 	{
-		c = rand();
+		c = rand() % 128;
 		printf("%c", c);
 	}
 
