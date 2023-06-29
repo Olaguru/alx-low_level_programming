@@ -13,11 +13,13 @@ int main(void)
 
 	srand(time(NULL));
 	
-	for (i = 0; i <= 3000; i++)
+	for (i = 0; i <= 2654; i++)
 	{
 		c = rand() % 128;
+		i += c;
 		printf("%c", c);
 	}
+	printf("%c", 2772 - i);
 
 	return (0);
 }
