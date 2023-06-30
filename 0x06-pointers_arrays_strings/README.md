@@ -1,0 +1,3 @@
+0x06. C - More pointers, arrays and strings
+
+This is an extension of the pointers arrays and strings task....
