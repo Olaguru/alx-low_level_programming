@@ -26,6 +26,5 @@ char *cap_string(char *str)
 		}
 	}
 	}
-
 	return (str);
 }
