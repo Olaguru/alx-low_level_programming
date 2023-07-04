@@ -8,7 +8,8 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j, k, l, initial_length = 0;
+	int i, j, k, l;
+	unsigned int len = 0;
 
 	i = 0;
 
@@ -29,10 +30,12 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (accept[l] == s[k])
 			{
-				initial_length++;
+				len++;
 				break;
 			}
+			else if (accept[l + 1] == '\0')
+				return (len);
 		}
 	}
-	return (initial_length);
+	return (len);
 }
