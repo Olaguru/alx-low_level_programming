@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * _strpbrk - the main function search strings for set of byte
  *
@@ -11,10 +10,6 @@
 char *_strpbrk(char *s, char *accept)
 {
 	char *temp;
-	if (s == NULL || accept == NULL)
-	{
-		return (NULL);
-	}
 
 	for (; *s != '\0'; s++)
 	{
@@ -27,5 +22,5 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	}
-	return (NULL);
+	return (0);
 }
