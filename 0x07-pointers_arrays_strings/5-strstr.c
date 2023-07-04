@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _strstr -  function finds the first occurrence of a
+ * _strstr - function finds the first occurrence of a
  * substring in a string
  * @needle: substring
  * @haystack: string
  *
- * Return:
+ * Return: char pointer to haystack from the subset found
  */
 char *_strstr(char *haystack, char *needle)
 {
