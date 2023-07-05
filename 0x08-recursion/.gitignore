@@ -4,3 +4,4 @@
 2-strlen_recursion
 3-factorial
 4-pow
+5-sqrt
