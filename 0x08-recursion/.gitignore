@@ -5,3 +5,4 @@
 3-factorial
 4-pow
 5-sqrt
+6-prime
