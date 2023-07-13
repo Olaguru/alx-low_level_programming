@@ -34,7 +34,7 @@ char **strtow(char *str)
 	{
 		aout = malloc((height + 1) * sizeof(char *));
 	}
-		if (aout == NULL)
+		if (aout == NULL || height == 0)
 		{
 			free(aout);
 			return (NULL);
