@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
- * malloc_checked - allocate memory using malloc
- *
- * @b: input int
- * Return: void
+ * malloc_checked - Main Entry
+ * @b: input
+ * Return: 0
  */
 void *malloc_checked(unsigned int b)
 {
