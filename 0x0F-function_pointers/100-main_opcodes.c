@@ -26,7 +26,7 @@ void print_opcodes(char *a, int n)
  *
  * Return: always 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int n;
 
