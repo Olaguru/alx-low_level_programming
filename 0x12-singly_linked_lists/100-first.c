@@ -1,7 +1,7 @@
 #include "lists.h"
 void ComeFirstbyCTC(void)__attribute__ ((constructor));
 /**
- * ComeFirst - Function that runs before the main function
+ * ComeFirstbyCTC - Function that runs before the main function
  */
 void ComeFirstbyCTC(void)
 {
